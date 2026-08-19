@@ -367,7 +367,7 @@ with st.sidebar:
     checked_by  = st.text_input("Checked By")
 
 # ── LOAD COSTS ───────────────────────────────────────────────
-cost_df = pd.read_excel("costs.xlsx")
+cost_df = pd.read_excel("costzambale.xlsx")
 cost_df.columns = cost_df.columns.str.strip()
 ingredients = cost_df.iloc[:, 0].dropna().tolist()
 
